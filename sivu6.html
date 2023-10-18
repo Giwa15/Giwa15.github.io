@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="muotoilu.css">
+  <script>
+  function omaVaihda() {
+  document.getElementById("teksti").innerHTML = 
+   "Uusi teksti.";
+ }
+ </script>
+  <style>
+   #teksti{color:RED;}
+  </style>
+ </head>
+ <body>
+
+   <div class="header">
+     <h1> JavaScript sivu6.html </h1>
+   </div>
+
+   <div class="row">
+
+    <div class="col-3 col-s-3 menu">
+      <ul>
+       <a href="index.html" id="eiviiva"><li> Aluksi  </li></a>
+       <a href="sivu1.html" id="eiviiva"><li> Muuttujat </li></a>
+       <a href="sivu2.html" id="eiviiva"><li> Funktiot</li></a>
+       <a href="sivu3.html" id="eiviiva"><li>Tapahtumat</li></a>
+       <a href="sivu4.html" id="eiviiva"><li> Metodit </li></a>
+       <a href="sivu5.html" id="eiviiva"><li> Ehto ja toisto</li></a>
+       <a href="sivu6.html" id="eiviiva"><li> Lomakkeet</li></a>	
+       <a href="sivu7.html" id="eiviiva"><li> CSS ja JavaScript</li></a>
+       <a href="sivu8.html" id="eiviiva"><li> Kikka-paikka</li></a>	
+       <a href="sivu9.html" id="eiviiva"><li> JQuery</li></a>		   
+      </ul>
+    </div>
+
+    <div class="col-9 col-s-9">
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 1 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+
+ &LTform name="omaEmail" action="/lomakefunktio.php" onsubmit="return tarkistaEmail()" method="post">
+   eMail: &LTinput type="text" name="email">
+   &LTinput type="submit"  class = "painike" value="Lähetä">
+  &LT/form>&LTbr>
+  
+   &LTdiv id="teht1" class="tehtava" onclick="tarkistaEmail()">
+   &LTspan class="tehtavaTeksti" id="omaTeht_teksti_1"> Oma email puuttuu. Ole hyvä, anna email. </span> 
+  &LT/div><br><br>
+
+
+  
+  &LTscript>
+    function tarkistaEmail() {
+      var x = document.forms["omaEmail"]["email"].value;
+      if (x == "") {
+        var popup = document.getElementById("omaTeht_teksti_1");
+         popup.classList.add("show");
+        return false;
+      }
+    }
+  &LT/script>
+  
+  
+  
+</pre></div>
+  
+   <form name="omaEmail" action="/lomakefunktio.php" onsubmit="return tarkistaEmail()" method="post">
+   eMail: <input type="text" name="email">
+   <input type="submit"  class = "painike" value="Lähetä">
+  </form><br>
+  
+   <div id="teht1" class="tehtava" onclick="tarkistaEmail()">
+   <span class="tehtavaTeksti" id="omaTeht_teksti_1"> Oma email puuttuu. Ole hyvä, anna email. </span> 
+  </div><br><br>
+
+
+  
+  <script>
+    function tarkistaEmail() {
+      var x = document.forms["omaEmail"]["email"].value;
+      if (x == "") {
+        var popup = document.getElementById("omaTeht_teksti_1");
+         popup.classList.add("show");
+        return false;
+      }
+    }
+  </script>
+  
+  
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+    
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      
+     </div>
+  </div>
+   <div class="footer">
+     <p> Mariam Araba Giwa</p>
+   </div>
+
+ </body>
+</html>

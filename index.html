@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="muotoilu.css">
+  <script>
+  function omaVaihda() {
+  document.getElementById("teksti").innerHTML = 
+   "Uusi teksti.";
+ }
+ </script>
+  <style>
+   #teksti{color:RED;}
+  </style>
+ </head>
+ <body>
+
+   <div class="header">
+     <h1> JavaScript index.html </h1>
+   </div>
+
+   <div class="row">
+
+    <div class="col-3 col-s-3 menu">
+      <ul>
+       <a href="index.html" id="eiviiva"><li> Aluksi  </li></a>
+       <a href="sivu1.html" id="eiviiva"><li> Muuttujat </li></a>
+       <a href="sivu2.html" id="eiviiva"><li> Funktiot</li></a>
+       <a href="sivu3.html" id="eiviiva"><li>Tapahtumat</li></a>
+       <a href="sivu4.html" id="eiviiva"><li> Metodit </li></a>
+       <a href="sivu5.html" id="eiviiva"><li> Ehto ja toisto</li></a>
+       <a href="sivu6.html" id="eiviiva"><li> Lomakkeet</li></a>	
+       		
+      </ul>
+    </div>
+
+    <div class="col-9 col-s-9">
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 1 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+ <b>JS</b>
+  &LTp id="yllatekti"> Bismilahi &LT/p>
+  
+  &LTbutton  class="painike" type="button" onclick="omaOhjelmaA()">Alihamdulilahi&LT/button>
+
+  &LTscript>
+   function omaOhjelmaA() {
+     document.getElementById("yllatekti").innerHTML = "Subuanolahi.";
+   }
+  &LT/script>&LTbr>&LTbr>
+  
+  
+   &LTbutton  class="painike" type="button" onclick="omaOhjelmaB()">tack&LT/button>
+   
+   
+   &LTscript>
+   function omaOhjelmaB() {
+     document.getElementById("allatekti").innerHTML = "valkommen";
+   }
+  &LT/script>
+  
+  &LTp id="allatekti"> Skool &LT/p>
+</pre></div>
+  
+   <p id="yllatekti"> Bismilahi </p>
+  
+  <button  class="painike" type="button" onclick="omaOhjelmaA()">Alihamdulilahi</button>
+
+  <script>
+   function omaOhjelmaA() {
+     document.getElementById("yllatekti").innerHTML = "Subuanolahi.";
+   }
+  </script><br><br>
+  
+  
+   <button  class="painike" type="button" onclick="omaOhjelmaB()">tack</button>
+   
+   
+   <script>
+   function omaOhjelmaB() {
+     document.getElementById("allatekti").innerHTML = "valkommen";
+   }
+  </script>
+  
+  <p id="allatekti"> Skool </p>
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 2 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+    &LTp id="teksti1">Bismilahi rahma ni rahim.&LT/p>
+	
+    &LTimg class="painamis" src="kaaba.jpg"  type="button" onclick="medina()">
+
+    &LTscript>
+        
+        function medina() {
+		    document.getElementById("teksti1").textContent = "Medina";
+			
+            
+        }
+    &LT/script>
+   
+  
+   
+    &LTp id="teksti2"> Voi tekee kaikki asioita.&LT/p>
+	
+    &LTimg class="painamis" src="prayer.jpeg"  type="button" onclick="solat()">
+
+    &LTscript>
+        
+        function solat() {
+		    document.getElementById("teksti2").textContent = "Rukoilu on tärkeää";
+			
+            
+        }
+    &LT/script>
+</pre></div>
+<p id="teksti1">Bismilahi rahma ni rahim.</p>
+	
+    <img class="painamis" src="kaaba.jpg"  type="button" onclick="medina()">
+
+    <script>
+        
+        function medina() {
+		    document.getElementById("teksti1").textContent = "Medina";
+			
+            
+        }
+    </script>
+   
+  
+   
+    <p id="teksti2"> Voi tekee kaikki asioita.</p>
+	
+    <img class="painamis" src="prayer.jpeg"  type="button" onclick="solat()">
+
+    <script>
+        
+        function solat() {
+		    document.getElementById("teksti2").textContent = "Rukoilu on tärkeää";
+			
+            
+        }
+    </script>
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      
+     </div>
+  </div>
+   <div class="footer">
+     <p> Mariam Araba Giwa</p>
+   </div>
+
+ </body>
+</html>

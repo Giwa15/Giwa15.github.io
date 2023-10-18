@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="muotoilu.css">
+  <script>
+  function omaVaihda() {
+  document.getElementById("teksti").innerHTML = 
+   "Uusi teksti.";
+ }
+ </script>
+  <style>
+   #teksti{color:RED;}
+  </style>
+ </head>
+ <body>
+
+   <div class="header">
+     <h1> JavaScript sivu4.html </h1>
+   </div>
+
+   <div class="row">
+
+    <div class="col-3 col-s-3 menu">
+      <ul>
+       <a href="index.html" id="eiviiva"><li> Aluksi  </li></a>
+       <a href="sivu1.html" id="eiviiva"><li> Muuttujat </li></a>
+       <a href="sivu2.html" id="eiviiva"><li> Funktiot</li></a>
+       <a href="sivu3.html" id="eiviiva"><li>Tapahtumat</li></a>
+       <a href="sivu4.html" id="eiviiva"><li> Metodit </li></a>
+       <a href="sivu5.html" id="eiviiva"><li> Ehto ja toisto</li></a>
+       <a href="sivu6.html" id="eiviiva"><li> Lomakkeet</li></a>	
+      </ul>
+    </div>
+
+    <div class="col-9 col-s-9">
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 1 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+ 
+ &LTbutton class="nappi" onclick="mydice(1, 6)"> Noppa </button><br>
+
+&LTp id="dice"></p>
+
+&LTimg id="JSkuva" class="kuuva" onclick="mydice(1, 6)">
+
+&LTscript>
+
+    function mydice(min, max) {
+
+        var noppa = Math.floor(Math.random() * (max - min + 1)) + min;
+        document.getElementById('dice').innerHTML = "Arpa " + noppa;
+
+        var kuva = document.getElementById("JSkuva");
+
+        if (noppa == 1) {
+            document.getElementById("JSkuva").src = "lottery1.JPG";
+
+        } else if (noppa == 2) {
+            document.getElementById("JSkuva").src = "lottery2.JPG";
+
+        } else if (noppa == 3) {
+            document.getElementById("JSkuva").src = "lottery3.JPG";
+
+        } else if (noppa == 4) {
+            document.getElementById("JSkuva").src = "lottery4.JPG";
+
+        } else if (noppa == 5) {
+            document.getElementById("JSkuva").src = "lottery5.JPG";
+
+        } else {
+            document.getElementById("JSkuva").src = "lottery6.JPG";
+
+        }
+    }
+
+</script> 
+</pre></div>
+
+<button class="nappi" onclick="mydice(1, 6)"> Noppa </button><br>
+
+<p id="dice"></p>
+
+<img id="JSkuva" class="kuuva" onclick="mydice(1, 6)">
+
+<script>
+
+    function mydice(min, max) {
+
+        var noppa = Math.floor(Math.random() * (max - min + 1)) + min;
+        document.getElementById('dice').innerHTML = "Arpa " + noppa;
+
+        var kuva = document.getElementById("JSkuva");
+
+        if (noppa == 1) {
+            document.getElementById("JSkuva").src = "lottery1.JPG";
+
+        } else if (noppa == 2) {
+            document.getElementById("JSkuva").src = "lottery2.JPG";
+
+        } else if (noppa == 3) {
+            document.getElementById("JSkuva").src = "lottery3.JPG";
+
+        } else if (noppa == 4) {
+            document.getElementById("JSkuva").src = "lottery4.JPG";
+
+        } else if (noppa == 5) {
+            document.getElementById("JSkuva").src = "lottery5.JPG";
+
+        } else {
+            document.getElementById("JSkuva").src = "lottery6.JPG";
+
+        }
+    }
+
+</script>
+  
+   
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+     
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      
+     </div>
+  </div>
+   <div class="footer">
+     <p> Mariam Araba Giwa</p>
+   </div>
+
+ </body>
+</html>

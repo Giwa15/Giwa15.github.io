@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="muotoilu.css">
+  <script>
+  function omaVaihda() {
+  document.getElementById("teksti").innerHTML = 
+   "Uusi teksti.";
+ }
+ </script>
+  <style>
+   #teksti{color:RED;}
+  </style>
+ </head>
+ <body>
+
+   <div class="header">
+     <h1> JavaScript sivu3.html </h1>
+   </div>
+
+   <div class="row">
+
+    <div class="col-3 col-s-3 menu">
+      <ul>
+       <a href="index.html" id="eiviiva"><li> Aluksi  </li></a>
+       <a href="sivu1.html" id="eiviiva"><li> Muuttujat </li></a>
+       <a href="sivu2.html" id="eiviiva"><li> Funktiot</li></a>
+       <a href="sivu3.html" id="eiviiva"><li>Tapahtumat</li></a>
+       <a href="sivu4.html" id="eiviiva"><li> Metodit </li></a>
+       <a href="sivu5.html" id="eiviiva"><li> Ehto ja toisto</li></a>
+       <a href="sivu6.html" id="eiviiva"><li> Lomakkeet</li></a>	
+       		   
+      </ul>
+    </div>
+
+    <div class="col-9 col-s-9">
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 1 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+ 
+ &LTdiv id="tekstiLaatikko" class="tapahtuma" onmousedown="vaihdaTeksti(event)">
+	Klikkaa hiiren painikkeilla tekstiä.
+	
+	&LT/div>
+	
+		
+	&LTscript>
+	  document.addEventListener('contextmenu', event => event.preventDefault());
+
+	  var tekstiLaatikko = document.getElementById('tekstiLaatikko');
+
+	  function vaihdaTeksti(event) {
+		var teksti = "";
+		var vari = "";
+
+		if (event.button == 0) {
+		  teksti = "Vasenta painiketta";
+		  vari = "yellow";
+		} else if (event.button == 1) {
+		  teksti = "Keskimmäistä painiketta";
+		  vari = "pink";
+		} else if (event.button == 2) {
+		  teksti = "Oikeaa painiketta";
+		  vari = "purple";
+		}
+
+		tekstiLaatikko.innerText = teksti;
+		tekstiLaatikko.style.backgroundColor = vari;
+	  }
+	
+	&/script>
+  
+</pre></div>
+
+ <div id="tekstiLaatikko" class="tapahtuma" onmousedown="vaihdaTeksti(event)">
+	Klikkaa hiiren painikkeilla tekstiä.
+	
+	</div>
+	
+		
+	<script>
+	  document.addEventListener('contextmenu', event => event.preventDefault());
+
+	  var tekstiLaatikko = document.getElementById('tekstiLaatikko');
+
+	  function vaihdaTeksti(event) {
+		var teksti = "";
+		var vari = "";
+
+		if (event.button == 0) {
+		  teksti = "Vasenta painiketta";
+		  vari = "yellow";
+		} else if (event.button == 1) {
+		  teksti = "Keskimmäistä painiketta";
+		  vari = "pink";
+		} else if (event.button == 2) {
+		  teksti = "Oikeaa painiketta";
+		  vari = "purple";
+		}
+
+		tekstiLaatikko.innerText = teksti;
+		tekstiLaatikko.style.backgroundColor = vari;
+	  }
+	
+	</script>
+   
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 2 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+   
+    &LTdiv id="resBox" class="tapahtuma" onmousedown="laskeRes(event)">
+	Näyttää vastuksen laskeminen.
+	
+	&LT/div>
+	
+		
+	&LTscript>
+	  document.addEventListener('contextmenu', event => event.preventDefault());
+
+	  var resBox = document.getElementById('resBox');
+
+	  function laskeRes(event) {
+		var R1 = 100;
+	    var R2 = 100;
+	    var R3 = 100;
+	    var rinnanLaske = 1 / ((1/R1 )+ (1/R2 )+ (1/R3 ));
+		var sarjaLaske = R1 + R2 + R3;
+		var laske;
+		var vari;
+
+		  if (event.altKey){
+		     laske = "Rinnan on " + rinnanLaske  + "Ω";
+			 vari = "yellow";
+		  }else {
+		      laske =  "Sarja on " + sarjaLaske + "Ω";
+			  vari = "pink";
+		   }
+		   resBox.innerText = laske;
+		   resBox.style.backgroundColor = vari;
+		}
+	&LT/script>
+</pre></div>
+
+<div id="resBox" class="tapahtuma" onmousedown="laskeRes(event)">
+	Näyttää vastuksen laskeminen.
+	
+	</div>
+	
+		
+	<script>
+	  document.addEventListener('contextmenu', event => event.preventDefault());
+
+	  var resBox = document.getElementById('resBox');
+
+	  function laskeRes(event) {
+		var R1 = 100;
+	    var R2 = 100;
+	    var R3 = 100;
+	    var rinnanLaske = 1 / ((1/R1 )+ (1/R2 )+ (1/R3 ));
+		var sarjaLaske = R1 + R2 + R3;
+		var laske;
+		var vari;
+
+		  if (event.altKey){
+		     laske = "Rinnan on " + rinnanLaske  + "Ω";
+			 vari = "yellow";
+		  }else {
+		      laske =  "Sarja on " + sarjaLaske + "Ω";
+			  vari = "pink";
+		   }
+		   resBox.innerText = laske;
+		   resBox.style.backgroundColor = vari;
+		}
+	</script>
+
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      
+     </div>
+  </div>
+   <div class="footer">
+     <p> Mariam Araba Giwa</p>
+   </div>
+
+ </body>
+</html>

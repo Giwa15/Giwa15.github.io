@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="muotoilu.css">
+<!--  <style>
+ 
+  </style> -->
+ </head>
+ <body>
+
+   <div class="header">
+     <h1> JavaScript sivu2.html</h1>
+   </div>
+
+   <div class="row">
+
+    <div class="col-3 col-s-3 menu">
+      <ul>
+       <a href="index.html" id="eiviiva"><li> Aluksi  </li></a>
+       <a href="sivu1.html" id="eiviiva"><li> Muuttujat </li></a>
+       <a href="sivu2.html" id="eiviiva"><li> Funktiot</li></a>
+       <a href="sivu3.html" id="eiviiva"><li>Tapahtumat</li></a>
+       <a href="sivu4.html" id="eiviiva"><li> Metodit </li></a>
+       <a href="sivu5.html" id="eiviiva"><li> Ehto ja toisto</li></a>
+       <a href="sivu6.html" id="eiviiva"><li> Lomakkeet</li></a>	
+       
+      </ul>
+    </div>
+
+    <div class="col-9 col-s-9">
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 1 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+
+&LTp id="rinnan">&LT/p>
+
+   &LTscript>
+    var R1 = 100,  R2 = 70,  R3 = 25, Rrinnan;
+
+    function kolmeRinnan() {
+      Rrinnan = 1/ ((1/R1 )+ (1/R2 )+ (1/R3 ));
+      return Rrinnan;
+    }
+    document.getElementById("rinnan").innerHTML = 
+	
+	    "R1 = "  +  R1 + "Ω" + "&LTbr>"  +
+	    " R2 = "  +  R2 + "Ω" + "&LTbr>"  +
+	    " R3 = "  +  R3 + "Ω" + "&LTbr>"  +
+	    "kRinnan = "  + kolmeRinnan(R1,R2,R3);
+   &LT/script>
+
+</pre></div>
+
+<p id="rinnan"></p>
+
+   <script>
+    var R1 = 100,  R2 = 70,  R3 = 25, Rrinnan;
+
+    function kolmeRinnan() {
+      Rrinnan = 1/ ((1/R1 )+ (1/R2 )+ (1/R3 ));
+      return Rrinnan;
+    }
+    document.getElementById("rinnan").innerHTML = 
+	
+	    "R1 = "  +  R1 + "Ω" + "<br>"  +
+	    " R2 = "  +  R2 + "Ω" + "<br>"  +
+	    " R3 = "  +  R3 + "Ω" + "<br>"  +
+	    "kRinnan = "  + kolmeRinnan(R1,R2,R3);
+   </script>
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 2 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+
+&LTp id="pallon">&LT/p>
+&LTp id="pallon1">&LT/p>
+
+ &LTscript>
+   
+    function pallonPintaAlan(säde) {
+      return 4 * 3.142 * (säde * säde);
+    }
+    document.getElementById("pallon").innerHTML = 
+	
+	"Pallon pintaala = "  + pallonPintaAlan(5) + "m2";
+	
+  &LT/script>
+   
+   
+   &LTscript>
+   
+    function pallonTilavuus(säde) {
+      return (4/3) * 3.142 * (säde * säde * säde);
+    }
+    document.getElementById("pallon1").innerHTML = 
+	
+	"Pallon pintaala = "  + pallonTilavuus(5) + "m2";
+	
+   &LT/script>
+ 
+</pre></div>
+
+<p id="pallon"></p>
+<p id="pallon1"></p>
+
+   <script>
+   
+    function pallonPintaAlan(säde) {
+      return 4 * 3.142 * (säde * säde);
+    }
+    document.getElementById("pallon").innerHTML = 
+	
+	"Pallon pintaala = "  + pallonPintaAlan(5) + "m2";
+	
+   </script>
+   
+   
+   <script>
+   
+    function pallonTilavuus(säde) {
+      return (4/3) * 3.142 * (säde * säde * säde);
+    }
+    document.getElementById("pallon1").innerHTML = 
+	
+	"Pallon pintaala = "  + pallonTilavuus(5) + "m2";
+	
+   </script>
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 3</h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+ &LTp id="resistance">&LT/p>
+
+  &LTscript>
+   var vastaus  = [40, 20 ,30];
+   var summa;
+
+   function rinnant() {
+    summa = 1/ ((1/vastaus[0]) + (1/vastaus[1]) + (1/vastaus[2]));
+    return summa;
+   }
+   document.getElementById("resistance").innerHTML = 
+         "R1 = " + vastaus[0] + " Ω" + "&LTbr>" +
+		 "R2 = " + vastaus[1] + " Ω" + "&LTbr>" +
+         "R3 = " + vastaus[2] + " Ω" + "&LTbr>" +
+         " Vastuksen rinnankyktkennän = " + rinnant() + " Ω" ;
+		
+  &LT/script>
+  
+</pre></div>
+
+<p id="resistance"></p>
+
+  <script>
+   var vastaus  = [40, 20 ,30];
+   var summa;
+
+   function rinnant() {
+    summa = 1/ ((1/vastaus[0]) + (1/vastaus[1]) + (1/vastaus[2]));
+    return summa;
+   }
+   document.getElementById("resistance").innerHTML = 
+         "R1 = " + vastaus[0] + " Ω" + "<br>" +
+		 "R2 = " + vastaus[1] + " Ω" + "<br>" +
+         "R3 = " + vastaus[2] + " Ω" + "<br>" +
+         " Vastuksen rinnankyktkennän = " + rinnant() + " Ω";
+		
+  </script>
+  
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 16 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+
+ &LTp id="valineet" class="funktiot">&LT/p>
+
+  &LTscript>
+   var koneMERKKI = "BOSCH PBH 2100 RE";
+   var koneHinta = 30;
+   var kone2MERKKI = "BOSCH TYR 210 FR"
+   var kone2Hinta = 130;
+   
+
+   
+   document.getElementById("valineet").innerHTML = 
+        "Poravasara " + window.koneMERKKI + "&LTbr>"  + 
+		"Poravasara hinta on " + window.koneHinta + "€" + "&LTbr>" +
+		"Syöksysaha" + window.kone2MERKKI + "&LTbr>"  + 
+		" Syöksysaha hinta on " + window.koneHinta + "€";
+  &LT/script>
+  
+</pre></div>
+
+
+<p id="valineet" class="funktiot"></p>
+
+  <script>
+   var koneMERKKI = "BOSCH PBH 2100 RE";
+   var koneHinta = 30;
+   var kone2MERKKI = "BOSCH TYR 210 FR"
+   var kone2Hinta = 130;
+   
+
+   
+   document.getElementById("valineet").innerHTML = 
+        "Poravasara " + window.koneMERKKI + "<br>"  + 
+		"Poravasara hinta on " + window.koneHinta + "€" + "<br>" +
+		"Syöksysaha" + window.kone2MERKKI + "<br>"  + 
+		" Syöksysaha hinta on " + window.koneHinta + "€";
+  </script>
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+     
+
+<!---------- ÄLÄ HUKKAA -------------------------------------------->
+    </div>
+  </div> 
+
+   <div class="footer">
+     <p> Mariam Araba Giwa </p>
+   </div>
+
+ </body>
+</html>

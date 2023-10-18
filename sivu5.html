@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="muotoilu.css">
+  <script>
+  function omaVaihda() {
+  document.getElementById("teksti").innerHTML = 
+   "Uusi teksti.";
+ }
+ </script>
+  <style>
+   #teksti{color:RED;}
+  </style>
+ </head>
+ <body>
+
+   <div class="header">
+     <h1> JavaScript sivu5.html </h1>
+   </div>
+
+   <div class="row">
+
+    <div class="col-3 col-s-3 menu">
+      <ul>
+       <a href="index.html" id="eiviiva"><li> Aluksi  </li></a>
+       <a href="sivu1.html" id="eiviiva"><li> Muuttujat </li></a>
+       <a href="sivu2.html" id="eiviiva"><li> Funktiot</li></a>
+       <a href="sivu3.html" id="eiviiva"><li>Tapahtumat</li></a>
+       <a href="sivu4.html" id="eiviiva"><li> Metodit </li></a>
+       <a href="sivu5.html" id="eiviiva"><li> Ehto ja toisto</li></a>
+       <a href="sivu6.html" id="eiviiva"><li> Lomakkeet</li></a>	
+       		   
+      </ul>
+    </div>
+
+    <div class="col-9 col-s-9">
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 1 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+ 
+  
+&LTbutton onclick="omaTervehdys()"> Tervehdi &LT/button>
+ &LTp id="kello">&LT/p>
+
+ &LTscript>
+  function omaTervehdys() {
+  var tunti = new Date().getHours(); 
+  var tervehdys;
+	
+    if (tunti >= 5 && tunti <= 10) {
+        tervehdys = "Hyvää Huomenta";
+    } else if (tunti >= 10 && tunti <= 14) {
+        tervehdys = "Hyvää päivä";
+    } else if (tunti >= 14 && tunti <= 17) {
+        tervehdys = "Hyvää iltapäivää";
+    } else if (tunti >= 17 && tunti <= 23) {
+        tervehdys = "Hyvää iltaa!";
+    } else {
+        tervehdys = "Hyvää yötä!";
+    } 
+     document.getElementById("kello").textContent = tervehdys;
+  }
+  &LT/script>	
+</pre></div>
+  
+  
+	<button onclick="omaTervehdys()"> Tervehdi </button>
+ <p id="kello"></p>
+
+ <script>
+  function omaTervehdys() {
+  var tunti = new Date().getHours(); 
+  var tervehdys;
+	
+    if (tunti >= 5 && tunti <= 10) {
+        tervehdys = "Hyvää Huomenta";
+    } else if (tunti >= 10 && tunti <= 14) {
+        tervehdys = "Hyvää päivä";
+    } else if (tunti >= 14 && tunti <= 17) {
+        tervehdys = "Hyvää iltapäivää";
+    } else if (tunti >= 17 && tunti <= 23) {
+        tervehdys = "Hyvää iltaa!";
+    } else {
+        tervehdys = "Hyvää yötä!";
+    } 
+     document.getElementById("kello").textContent = tervehdys;
+  }
+  </script>	
+   
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+     
+
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      
+     </div>
+  </div>
+   <div class="footer">
+     <p> Mariam Araba Giwa</p>
+   </div>
+
+ </body>
+</html>

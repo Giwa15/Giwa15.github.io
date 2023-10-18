@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="muotoilu.css">
+<!--  <style>
+ 
+  </style> -->
+ </head>
+ <body>
+
+   <div class="header">
+     <h1> JavaScript sivu1.html</h1>
+   </div>
+
+   <div class="row">
+
+    <div class="col-3 col-s-3 menu">
+      <ul>
+       <a href="index.html" id="eiviiva"><li> Aluksi  </li></a>
+       <a href="sivu1.html" id="eiviiva"><li> Muuttujat </li></a>
+       <a href="sivu2.html" id="eiviiva"><li> Funktiot</li></a>
+       <a href="sivu3.html" id="eiviiva"><li>Tapahtumat</li></a>
+       <a href="sivu4.html" id="eiviiva"><li> Metodit </li></a>
+       <a href="sivu5.html" id="eiviiva"><li> Ehto ja toisto</li></a>
+       <a href="sivu6.html" id="eiviiva"><li> Lomakkeet</li></a>	
+       	   
+      </ul>
+    </div>
+
+    <div class="col-9 col-s-9">
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 1 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+ &LTp id="vastuksen_rinnankytkennan">&LT/p>
+ 
+    &LTscript>
+    var R1 = 100;
+	var R2 = 100;
+	var R3 = 100;
+	var Rkok = 1/ ((1/R1 )+ (1/R2 )+ (1/R3 ));
+	
+	 document.getElementById("vastuksen_rinnankytkennan").innerHTML = 
+	 
+	 " R1 = "  +  R1 + "Ω" + "&LTbr>"  +
+	 " R2 = "  +  R2 + "Ω" + "&LTbr>"  +
+	 " R3 = "  +  R3 + "Ω" + "&LTbr>"  +
+	 " Rkok = " + Rkok + "Ω" ;
+	 
+	 &LTscript>
+	 
+</pre></div>
+
+<p id="vastuksen_rinnankytkennan"></p>
+ 
+    <script>
+    var R1 = 100;
+	var R2 = 100;
+	var R3 = 100;
+	var Rkok = 1/ ((1/R1 )+ (1/R2 )+ (1/R3 ));
+	
+	 document.getElementById("vastuksen_rinnankytkennan").innerHTML = 
+	 
+	 " R1 = "  +  R1 + "Ω" + "<br>"  +
+	 " R2 = "  +  R2 + "Ω" + "<br>"  +
+	 " R3 = "  +  R3 + "Ω" + "<br>"  +
+	 " Rkok = " + Rkok + "Ω" ;
+	 
+	 </script>
+	 
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 2 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+   &LTdiv>
+    &LTh2 class="muutuja2">Ensimainen otisikko&LT/h2>
+	&LTp id="teksti1">&LT/p>
+	
+	&LTh2 class="muutuja2">Toinen otsikko&LT/h2>
+	&LTp id="teksti2">&LT/p>
+ &LT/div>
+	
+ &LTscript>
+	
+	var teksti1 = "Jukolan talo sijaitsee eteläisessä Hämeessä.";
+	var teksti2 = "Veljeksistä vanhin on Juhani, seuraavaksi tulevat kaksoset Tuomas ja Aapo.";
+     
+	document.getElementById("teksti1").innerHTML = teksti1;
+	document.getElementById("teksti2").innerHTML = teksti2;
+	    
+ &LT/script>
+ 
+</pre></div>
+
+ <div>
+    <h2 class="muutuja2">Ensimainen otisikko</h2>
+	<p id="teksti1"></p>
+	
+	<h2 class="muutuja2">Toinen otsikko</h2>
+	<p id="teksti2"></p>
+</div>
+	
+ <script>
+	
+	var teksti1 = "Jukolan talo sijaitsee eteläisessä Hämeessä.";
+	var teksti2 = "Veljeksistä vanhin on Juhani, seuraavaksi tulevat kaksoset Tuomas ja Aapo.";
+     
+	document.getElementById("teksti1").innerHTML = teksti1;
+	document.getElementById("teksti2").innerHTML = teksti2;
+	    
+ </script>
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 3 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+ 
+  &LTp id="keskiarvo">&LT/p>
+  
+ 6LTscript>
+	
+	var luku = [["Luku 1 = ", "Luku 2 = " , "Luku 3 = " , "Luku 4 =" , "Ka = "],
+				 [ 3, 5, 7, 9 , 0 ]];
+				 
+	luku[1][4] = (luku[1][0] + luku[1][1] + luku[1][2] + luku[1][3])/4 ; 
+	
+	document.getElementById("keskiarvo").innerHTML = 
+	luku[0][0]  + luku[1][0] + "&LTbr>" +
+	luku[0][1]  + luku[1][1] + "&LTbr>" +
+	luku[0][2]  + luku[1][2] + "&LTbr>" +
+	luku[0][3]  + luku[1][3] + "&LTbr>" +
+	luku[0][4] + luku[1][4] ;
+	    
+ &LT/script>
+ 
+ 
+ &LTh3> Numerot ja niiden keskiarvo&LT/h3>
+  &LTtable>
+  &LTtr>
+    &LTtd>Luku 1&LT/td>
+	&LTtd>Luku 2&LT/td>
+	&LTtd>Luku 3&LT/td>
+	&LTtd>Luku 4&LT/td>
+	&LTtd>Ka&LT/td>
+  &LT/tr>
+  &LTtr>
+    &LTtd>3&LT/td>
+	&LTtd>5&LT/td>
+	&LTtd>7&LT/td>
+	&LTtd>9&LT/td>
+	&LTtd id="keskiarvo2">&LT/td>
+  &LT/tr>
+  &LT/table>
+  
+  &LTscript>
+  
+     var Luku1 = 3;
+	 var Luku2 = 5;
+	 var Luku3 = 7;
+	 var Luku4 = 9;
+	 var Ka = (Luku1 + Luku2 + Luku3 + Luku4)/4;
+	 
+	 document.getElementById("keskiarvo2").innerHTML = Ka; 
+	 
+  &LT/script>
+ 
+</pre></div>
+
+ <p id="keskiarvo"></p>
+  
+ <script>
+	
+	var luku = [["Luku 1 = ", "Luku 2 = " , "Luku 3 = " , "Luku 4 =" , "Ka = "],
+				 [ 3, 5, 7, 9 , 0 ]];
+				 
+	luku[1][4] = (luku[1][0] + luku[1][1] + luku[1][2] + luku[1][3])/4 ; 
+	
+	document.getElementById("keskiarvo").innerHTML = 
+	luku[0][0]  + luku[1][0] + "<br>" +
+	luku[0][1]  + luku[1][1] + "<br>" +
+	luku[0][2]  + luku[1][2] + "<br>" +
+	luku[0][3]  + luku[1][3] + "<br>" +
+	luku[0][4] + luku[1][4] ;
+	
+	
+	    
+ </script>
+ 
+ 
+ <h3> Numerot ja niiden keskiarvo</h3>
+  <table>
+  <tr>
+    <td>Luku 1</td>
+	<td>Luku 2</td>
+	<td>Luku 3</td>
+	<td>Luku 4</td>
+	<td>Ka</td>
+  </tr>
+  <tr>
+    <td>3</td>
+	<td>5</td>
+	<td>7</td>
+	<td>9</td>
+	<td id="keskiarvo2"></td>
+  </tr>
+  </table>
+  
+  <script>
+  
+     var Luku1 = 3;
+	 var Luku2 = 5;
+	 var Luku3 = 7;
+	 var Luku4 = 9;
+	 var Ka = (Luku1 + Luku2 + Luku3 + Luku4)/4;
+	 
+	 document.getElementById("keskiarvo2").innerHTML = Ka; 
+	 
+  </script>
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+      <h3> Tehtävä 4 </h3>
+      <p> Lyhyesti, mitä koodaus tekee. </p>
+<div id="koodi"><pre>
+  &LTh3> Diesel ja kokonaishinta&LT/h3>
+  &LTtable>
+  &LTtr>
+   &LTth>Malli&LT/th>
+   &LTth>Suurin teho kW/hv&LT/th>
+   &LTth>Arvioitu CO2*&LT/th>
+   &LTth>Autoveroton hinta alv 24% €&LT/th>
+   &LTth>Arvioitu Autovero €&LT/th>
+    &LTth>Kokonaishinta €&LT/th>
+  &LT/tr>
+  &LTtr>
+    &LTtd>V60 D3 Momentum&LT/td>
+    &LTtd>110/150&LT/td>
+    &LTtd>137&LT/td>
+    &LTtd>35 500&LT/td>
+    &LTtd>5 555,97&LT/td>
+    &LTtd id="kokonaishinta1">&LT/td>
+  &LT/tr>
+  &LTtr>
+    &LTtd>V60 D3 Momentum aut&LT/td>
+    &LTtd>110/150&LT/td>
+    &LTtd>146&LT/td>
+    &LTtd>36 400&LT/td>
+    &LTtd>6 747,80&LT/td>
+    &LTtd id="kokonaishinta2">&LT/td>
+   &LT/tr>
+   &LTtr>
+     &LTtd>V60 D3 AWD Momentum aut&LT/td>
+     &LTtd>110/150&LT/td>
+     &LTtd>150&LT/td>
+     &LTtd>38 400&LT/td>
+     &LTtd>7 697,43&LT/td>
+     &LTtd id="kokonaishinta3">&LT/td>
+   &LT/tr>
+   &LTtr>
+       &LTtd>V60 D4 Momentum&LT/td>
+       &LTtd>140/190&LT/td>
+       &LTtd>138&LT/td>
+       &LTtd>38 000&LT/td>
+       &LTtd>6 047,60&LT/td>
+       &LTtd id="kokonaishinta4">&LT/td>
+    &LT/tr>
+    &LTtr>
+        &LTtd>V60 D4 Momentum aut&LT/td>
+        &LTtd>140/190&LT/td>
+        &LTtd>145&LT/td>
+        &LTtd>39 100&LT/td>
+        &LTtd>7 094,55&LT/td>
+        &LTtd id="kokonaishinta5">&LT/td>
+    &LT/tr>
+    &LTtr>
+        &LTtd>V60 D4 AWD Momentum aut&LT/td>
+        &LTtd>140/190&LT/td>
+        &LTtd>150&LT/td>
+        &LTtd>40 600 &LT/td>
+        &LTtd>8 141,49&LT/td>
+        &LTtd id="kokonaishinta6">&LT/td>
+    &LT/tr>
+  &LT/table>
+  
+  &LTscript>
+  
+     
+	 
+	 var diesel = [
+	 	 ["35 500", "36 400", "38400", "38000", "39100", "40600"],
+	     ["5 555,97", "6 747,80", "7 697,43", "6 047,60", "7 094,55", "8 141,49"]
+	 ]
+	 
+	var v60D3Momentum = diesel[0][0] + diesel[1][0];
+	var v60D3MomentumAut = diesel[0][1] + diesel[1][1];
+	var v60D3AWDMomentumAut = diesel[0][2] + diesel[1][2];
+	var v60D4Momentum = diesel[0][3] + diesel[1][3];
+	var v60D4MomentumAut = diesel[0][4] + diesel[1][4];
+	var v60D4AWDMomentumAut = diesel[0][5] + diesel[1][5];
+	
+	
+	document.getElementById("kokonaishinta1").innerHTML = v60D3Momentum;
+	document.getElementById("kokonaishinta2").innerHTML = v60D3MomentumAut;
+	document.getElementById("kokonaishinta3").innerHTML = v60D3AWDMomentumAut;
+	document.getElementById("kokonaishinta4").innerHTML = v60D4Momentum;
+	document.getElementById("kokonaishinta5").innerHTML = v60D4MomentumAut;
+	document.getElementById("kokonaishinta6").innerHTML = v60D4AWDMomentumAut;
+	 
+  &LT/script>
+</pre></div>
+
+ <h3> Diesel ja kokonaishinta</h3>
+  <table>
+  <tr>
+   <th>Malli</th>
+   <th>Suurin teho kW/hv</th>
+   <th>Arvioitu CO2*</th>
+   <th>Autoveroton hinta alv 24% €</th>
+   <th>Arvioitu Autovero €</th>
+    <th>Kokonaishinta €</th>
+  </tr>
+  <tr>
+    <td>V60 D3 Momentum</td>
+    <td>110/150</td>
+    <td>137</td>
+    <td>35 500</td>
+    <td>5 555,97</td>
+    <td id="kokonaishinta1"></td>
+  </tr>
+  <tr>
+    <td>V60 D3 Momentum aut</td>
+    <td>110/150</td>
+    <td>146</td>
+    <td>36 400</td>
+    <td>6 747,80</td>
+    <td id="kokonaishinta2"></td>
+   </tr>
+   <tr>
+     <td>V60 D3 AWD Momentum aut</td>
+     <td>110/150</td>
+     <td>150</td>
+     <td>38 400</td>
+     <td>7 697,43</td>
+     <td id="kokonaishinta3"></td>
+   </tr>
+   <tr>
+       <td>V60 D4 Momentum</td>
+       <td>140/190</td>
+       <td>138</td>
+       <td>38 000</td>
+       <td>6 047,60</td>
+       <td id="kokonaishinta4"></td>
+    </tr>
+    <tr>
+        <td>V60 D4 Momentum aut</td>
+        <td>140/190</td>
+        <td>145</td>
+        <td>39 100</td>
+        <td>7 094,55</td>
+        <td id="kokonaishinta5"></td>
+    </tr>
+    <tr>
+        <td>V60 D4 AWD Momentum aut</td>
+        <td>140/190</td>
+        <td>150</td>
+        <td>40 600</td>
+        <td>8 141,49</td>
+        <td id="kokonaishinta6"></td>
+    </tr>
+  </table>
+  
+  <script>
+  
+     
+	 
+	 var diesel = [
+	 	 ["35 500", "36 400", "38400", "38000", "39100", "40600"],
+	     ["5 555,97", "6 747,80", "7 697,43", "6 047,60", "7 094,55", "8 141,49"]
+	 ]
+	 
+	var v60D3Momentum = diesel[0][0] + diesel[1][0];
+	var v60D3MomentumAut = diesel[0][1] + diesel[1][1];
+	var v60D3AWDMomentumAut = diesel[0][2] + diesel[1][2];
+	var v60D4Momentum = diesel[0][3] + diesel[1][3];
+	var v60D4MomentumAut = diesel[0][4] + diesel[1][4];
+	var v60D4AWDMomentumAut = diesel[0][5] + diesel[1][5];
+	
+	
+	document.getElementById("kokonaishinta1").innerHTML = v60D3Momentum;
+	document.getElementById("kokonaishinta2").innerHTML = v60D3MomentumAut;
+	document.getElementById("kokonaishinta3").innerHTML = v60D3AWDMomentumAut;
+	document.getElementById("kokonaishinta4").innerHTML = v60D4Momentum;
+	document.getElementById("kokonaishinta5").innerHTML = v60D4MomentumAut;
+	document.getElementById("kokonaishinta6").innerHTML = v60D4AWDMomentumAut;
+	 
+  </script>
+
+<!------------------- END ------------------------------------------->
+
+<!------------------------------------------------------------------->	
+    
+<!------------------- END ------------------------------------------->
+
+
+
+<!---------- ÄLÄ HUKKAA -------------------------------------------->
+    </div>
+  </div> 
+
+   <div class="footer">
+     <p> Mariam Araba Giwa</p>
+   </div>
+
+ </body>
+</html>
